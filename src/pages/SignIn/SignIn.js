@@ -16,13 +16,11 @@ export const SignIn = () => {
     e.preventDefault();
 
     signIn(state.email, state.password);
-    if (userLogIn) {
-      navigate("/");
-    }
     setUserLogIn(user);
   };
-  console.log(state);
-  console.log(user);
+  if (user) {
+    navigate("/");
+  }
 
   return (
     <form className="formBody" autoComplete="off" onSubmit={handleSubmit}>
