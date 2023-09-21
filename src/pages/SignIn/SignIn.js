@@ -6,9 +6,6 @@ export const SignIn = () => {
   const [state, setState] = useState({ email: "", password: "" });
   const { signIn, user } = useContext(AuthContext);
   const navigate = useNavigate();
-
-  const [userLogIn, setUserLogIn] = useState(null);
-
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
@@ -16,7 +13,6 @@ export const SignIn = () => {
     e.preventDefault();
 
     signIn(state.email, state.password);
-    setUserLogIn(user);
   };
   if (user) {
     navigate("/");

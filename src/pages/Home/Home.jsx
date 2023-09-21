@@ -20,7 +20,7 @@ export const Home = () => {
 
       <div className="Container">
         {filterGallery.map((pics) => (
-          <ImageCard {...pics} />
+          <ImageCard {...pics} key={pics.id}/>
         ))}
       </div>
     </main>
