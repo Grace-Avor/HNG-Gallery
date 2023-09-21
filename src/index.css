@@ -1,0 +1,133 @@
+/*Main gallary*/
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  opacity: 0.8;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 40%;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgb(189, 189, 186);
+  border-radius: 15px;
+}
+
+.images {
+  height: 250px;
+  box-shadow: 5px 5px 5px rgb(189, 189, 186);
+}
+
+.MainContainer {
+  width: 100%;
+}
+
+.firstP {
+  font-size: 14px;
+}
+
+.displayImage {
+  position: relative;
+}
+
+.search-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.searchfield--wrapper {
+  top: -70px;
+  right: 0;
+  left: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-btn {
+  position: relative;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: purple;
+}
+
+.firstImage {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.flexContainer {
+  background-color: #e8eded;
+}
+
+.Container {
+  margin: 50px auto;
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px 300px;
+}
+
+.formBody {
+  width: 50%;
+  margin: 10% auto;
+}
+
+.btn-primary {
+  width: 10%;
+}
+
+@media screen and (max-width: 450px) {
+  input {
+    width: 80%;
+    margin-top: -30px;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  img {
+    width: 300px;
+    padding: 0 auto;
+  }
+
+  .First-row,
+  .Second-row,
+  .Third-row,
+  .Fourth-row {
+    display: block;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px;
+  }
+
+  .firstImage {
+    height: 250px;
+  }
+
+  .sign-btn,
+  .btn-primary {
+    width: 35%;
+  }
+}

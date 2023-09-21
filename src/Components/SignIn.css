@@ -1,0 +1,33 @@
+Body{
+background-image: url("../assets/splash3.jpg");  
+background-repeat: no-repeat;
+background-size: cover;
+background-color: #000;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.4);
+opacity: 0.8;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 40%;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgb(189, 189, 186);
+  border-radius: 15px;
+}
+
+.form-control {
+  display: block;
+  border: 1px solid black;
+}
+
+.formContainer {
+  width: 500px;
+  margin: 150px auto;
+}
