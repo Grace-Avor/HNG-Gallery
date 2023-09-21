@@ -130,4 +130,9 @@ input {
   .btn-primary {
     width: 35%;
   }
+
+  .formBody {
+  width: 80%;
+  margin: 30% auto;
+}
 }
