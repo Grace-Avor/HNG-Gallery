@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-h1{
+h1 {
   color: #683e4a;
 }
 
@@ -46,10 +46,12 @@ input {
 }
 
 .displayImage {
-  background-image: url("../public/assets/beach2.jpg");
+  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.418)), url("../public/assets/beach2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .search-form {
@@ -101,7 +103,7 @@ input {
   width: 100%;
 }
 
-.signout-btn{
+.signout-btn {
   position: relative;
   width: 10%;
   outline: none;
@@ -111,7 +113,7 @@ input {
   border-radius: 5px;
 }
 
-.signin--wrapper{
+.signin--wrapper {
   padding: 15px;
 }
 @media screen and (max-width: 450px) {
@@ -155,9 +157,8 @@ input {
     text-align: center;
   }
 
-  .signout-btn{
+  .signout-btn {
     width: 30%;
-
   }
 
   .formBody {
