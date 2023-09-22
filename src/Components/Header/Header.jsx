@@ -9,7 +9,7 @@ export const Header = () => {
     <header className="displayImage bg-dark">
       <div className="signin--wrapper d-flex">
         <button
-          className="sign-btn"
+          className="signout-btn bg-primary"
           onClick={() => {
             signOut();
             navigate("/login");

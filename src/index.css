@@ -57,15 +57,6 @@ input {
   align-items: center;
   justify-content: center;
 }
-.sign-btn {
-  position: relative;
-  outline: none;
-  border: none;
-  color: white;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  background-color: purple;
-}
 
 .firstImage {
   width: 100%;
@@ -100,6 +91,19 @@ input {
   width: 100%;
 }
 
+.signout-btn{
+  position: relative;
+  width: 10%;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.signin--wrapper{
+  padding: 15px;
+}
 @media screen and (max-width: 450px) {
   input {
     width: 80%;
@@ -139,6 +143,11 @@ input {
   .btn-primary {
     width: 100%;
     text-align: center;
+  }
+
+  .signout-btn{
+    width: 30%;
+
   }
 
   .formBody {
