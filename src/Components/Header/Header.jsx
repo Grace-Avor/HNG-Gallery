@@ -15,7 +15,7 @@ export const Header = () => {
             navigate("/login");
           }}
         >
-          Logout
+          Sign Out
         </button>
       </div>
       <h1 className="firstImage bg-dark text-white text-center pt-5">

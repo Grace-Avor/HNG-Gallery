@@ -4,19 +4,18 @@ import { AuthContext } from "../../context/AuthContext";
 
 export const SignIn = () => {
   const [state, setState] = useState({ email: "", password: "" });
-  const { signIn, user } = useContext(AuthContext);
+  const { error, signIn, user } = useContext(AuthContext);
   const navigate = useNavigate();
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-
     signIn(state.email, state.password);
   };
   if (user) {
     navigate("/");
-  }
+  } 
 
   return (
     <div className="container">
@@ -28,6 +27,7 @@ export const SignIn = () => {
         You need a unique password to access it
       </p>
       <p className="text-center mt-2">Enjoy the view</p>
+      {error && <p className="text-center text-danger fw-bold">{error}</p>}
       <form className="formBody" autoComplete="off" onSubmit={handleSubmit}>
         <div className="formContainer">
           <div className="">
@@ -36,6 +36,7 @@ export const SignIn = () => {
             <input
               type="email"
               name="email"
+              placeholder="name@company.com"
               onChange={handleChange}
               value={state.email}
               className="form-input mb-5 w-100 border shadow-none"
@@ -46,6 +47,7 @@ export const SignIn = () => {
               <input
                 type="password"
                 name="password"
+                placeholder="........."
                 onChange={handleChange}
                 value={state.password}
                 className="form-input mb-5 w-100 border shadow-none"
@@ -60,7 +62,7 @@ export const SignIn = () => {
                 name="btn-letsgo"
                 className="btn btn-primary"
               >
-                SignIn
+                Sign In
               </button>
             </div>
           </div>
