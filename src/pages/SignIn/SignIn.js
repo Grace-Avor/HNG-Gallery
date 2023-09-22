@@ -19,44 +19,53 @@ export const SignIn = () => {
   }
 
   return (
-    <form className="formBody" autoComplete="off" onSubmit={handleSubmit}>
-      <div className="formContainer">
-        <div className="">
-          <label className=" fs-5 fw-bolder">
-            Email <span>*</span>
-          </label>
-          <br />
-          <input
-            type="email"
-            name="email"
-            onChange={handleChange}
-            value={state.email}
-            className="form-input mb-5 w-100 border shadow-none"
-            autoComplete="off"
-          />
-          <div className="passwordDiv">
-            <label className=" fs-5 fw-bolder">
-              Password <span>*</span>
-            </label>{" "}
+    <div className="container">
+      <h3 className="text-center mt-5">
+        {" "}
+        Welcome to the gallery of my glass house fantasy
+      </h3>
+      <p className="text-center mt-5">
+        You need a unique password to access it
+      </p>
+      <p className="text-center mt-2">Enjoy the view</p>
+      <form className="formBody" autoComplete="off" onSubmit={handleSubmit}>
+        <div className="formContainer">
+          <div className="">
+            <label className="fw-bolder">Email</label>
             <br />
             <input
-              type="password"
-              name="password"
+              type="email"
+              name="email"
               onChange={handleChange}
-              value={state.password}
+              value={state.email}
               className="form-input mb-5 w-100 border shadow-none"
               autoComplete="off"
             />
+            <div className="passwordDiv">
+              <label className="fw-bolder">Password</label> <br />
+              <input
+                type="password"
+                name="password"
+                onChange={handleChange}
+                value={state.password}
+                className="form-input mb-5 w-100 border shadow-none"
+                autoComplete="off"
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col text-right">
+              <button
+                type="submit"
+                name="btn-letsgo"
+                className="btn btn-primary"
+              >
+                SignIn
+              </button>
+            </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col text-right">
-            <button type="submit" name="btn-letsgo" className="btn btn-primary">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
