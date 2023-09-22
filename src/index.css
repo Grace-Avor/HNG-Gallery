@@ -42,7 +42,10 @@ input {
 }
 
 .displayImage {
-  position: relative;
+  background-image: url("../public/assets/beach2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .search-form {

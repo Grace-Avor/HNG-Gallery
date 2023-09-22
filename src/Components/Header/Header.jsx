@@ -6,7 +6,7 @@ export const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="displayImage bg-dark">
+    <header className="displayImage">
       <div className="signin--wrapper d-flex">
         <button
           className="signout-btn bg-primary"
@@ -18,7 +18,7 @@ export const Header = () => {
           Sign Out
         </button>
       </div>
-      <h1 className="firstImage bg-dark text-white text-center pt-5">
+      <h1 className="firstImage text-white text-center pt-5">
         {" "}
         Beautiful Glass Houses <br />
         for Your Vacation{" "}
