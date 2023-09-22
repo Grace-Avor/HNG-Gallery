@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  color: #683e4a;
+  color: #fff;
 }
 
 h3 {
@@ -33,7 +33,6 @@ input {
 
 .images {
   height: 250px;
-  box-shadow: 5px 5px 5px rgb(189, 189, 186);
   border-radius: 10px;
 }
 
@@ -50,7 +49,6 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  
   background-color: rgba(0, 0, 0, 0.4);
 }
 
