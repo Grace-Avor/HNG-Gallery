@@ -18,7 +18,7 @@ export const Header = () => {
           Sign Out
         </button>
       </div>
-      <h1 className="firstImage text-white text-center pt-5">
+      <h1 className="firstImage text-center pt-5">
         {" "}
         Beautiful Glass Houses <br />
         for Your Vacation{" "}

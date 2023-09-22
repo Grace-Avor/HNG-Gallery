@@ -1,5 +1,5 @@
 export const data = [
-  { url: "../assets/splash3.jpg", title: " Bayelsa House", id: "bayelsa-1" },
+  { url: "../assets/splash2.jpg", title: " Bayelsa House", id: "bayelsa-1" },
   { url: "../assets/img1.jpeg", title: "Delta House", id: "delta-2" },
   {
     url: "../assets/img2.jpeg",
