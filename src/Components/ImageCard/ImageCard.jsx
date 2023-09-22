@@ -13,7 +13,7 @@ export const ImageCard = (props) => {
         >
           <div className="images">
             <img src={props.url} alt={props.title} loading="lazy" />
-            <p className="text-center fw-bold firstP">{props.title}</p>
+            <p className="text-center fw-bold firstP pt-3">{props.title}</p>
           </div>
         </div>
       )}
