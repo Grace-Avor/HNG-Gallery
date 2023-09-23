@@ -12,13 +12,13 @@ export const Header = () => {
           className="signout-btn bg-primary"
           onClick={() => {
             signOut();
-            navigate("/login");
+            navigate("/gallery");
           }}
         >
           Sign Out
         </button>
       </div>
-      <h1 className="firstImage text-center pt-5">
+      <h1 className="firstImage text-white text-center pt-5">
         {" "}
         Beautiful Glass Houses <br />
         for Your Vacation{" "}

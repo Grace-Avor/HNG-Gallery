@@ -18,7 +18,7 @@ img {
   width: 300px;
   height: 200px;
   border-top-left-radius: 10px;
-  border-width: thin;
+  box-shadow: 5px 5px 5px rgb(189, 189, 186);
   border-top-right-radius: 10px;
 }
 
@@ -35,7 +35,6 @@ input {
 .images {
   height: 250px;
   border-radius: 10px;
-  border: 1px solid #cecaca;
 }
 
 .MainContainer {
