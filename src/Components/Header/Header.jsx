@@ -12,7 +12,7 @@ export const Header = () => {
           className="signout-btn bg-primary"
           onClick={() => {
             signOut();
-            navigate("/gallery");
+            navigate("/login");
           }}
         >
           Sign Out

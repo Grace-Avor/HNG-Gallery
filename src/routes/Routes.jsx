@@ -13,7 +13,7 @@ export const RootRoutes = () => {
             </PrivateRoute>
           }
         />
-        <Route path="/gallery" element={<SignIn />} />
+        <Route path="/login" element={<SignIn />} />
       </Routes>
     </BrowserRouter>
   );
